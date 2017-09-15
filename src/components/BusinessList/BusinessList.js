@@ -5,7 +5,7 @@ import Business from '../Business/Business';
 class BusinessList extends React.Component {
   render() {
     return (
-      <div className="BusinessList" businesses={businesses}>
+      <div className="BusinessList">
         {
           this.props.businesses.map(business => <Business business={business} />)
         };
