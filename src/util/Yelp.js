@@ -11,10 +11,6 @@ const Yelp = {
       });
     }
 
-    // return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/oauth2/token?grant_type=client_credentials&client_id=${clientID}&client_secret=${secret}`, {method: 'POST',}).then(response => {
-    //     return response.json();
-    //   }).then(jsonResponse => {accessToken = jsonResponse.access_token;});
-
     return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/oauth2/token?grant_type=client_credentials&client_id=${clientID}&client_secret=${secret}`, {method: 'POST',})
     .then(response => response.json())
     .then(jsonResponse => {
